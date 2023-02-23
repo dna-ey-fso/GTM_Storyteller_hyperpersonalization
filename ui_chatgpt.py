@@ -65,7 +65,7 @@ def page2():
 
    sentiment = nlp("Your portfolio had a performance of -3.62% during the last 60 days. It is composed of different stocks from different sectors such as Information Technology, Consumer Cyclical, Financial Services and Healthcare. Some of the notable stocks are Apple, Microsoft, Amazon, Google, Visa and Johnson & Johnson, which have a weight of 20% each in the portfolio except for Visa and Johnson & Johnson that have a weight of 10% each. The most significant change in value for the last 60 days for the stocks in the portfolio is Amazon with a change of -26.46% and Visa with a change of 16.65%. The world index raised 9.88% and S&P500 raised 7.25% during the last 60 days. Your portfolio underperformed the market during this period.")
 
-   st.markdown('Sentiment analysis : {}'.format(sentiment[0]['label']))
+   st.markdown('The performance seems: {}'.format(sentiment[0]['label']))
 
    with st.expander("Full report"):
       st.markdown("The portfolio had a performance of -3.62% during this period.")
@@ -134,7 +134,7 @@ def page3():
       st.markdown("**Total:** 1170$")
       st.markdown("**Return:** +17%")
 
-   #vanaf hier beginnen aanpassen
+   #vanaf hier beginnen aanpasseo
    st.markdown("**Summary of your portfolio during the last 60 days:**")
    st.markdown("The portfolio has experienced a negative return of -3.62% over the last 60 days. This underperformance can be attributed to poor performance from several of the portfolio's holdings, particularly Amazon, Google and Apple.")
    st.markdown("Apple, one of the portfolio's largest holdings, had a negative return of -7.5% over the last 60 days which has a significant impact on the overall performance of the portfolio. This decline, along with poor performance of other large holdings such as Amazon and Google, had a significant impact on the portfolio's overall performance.")
@@ -142,7 +142,7 @@ def page3():
 
 
    sentiment = nlp("The portfolio has experienced a negative return of -3.62% over the last 60 days. This underperformance can be attributed to poor performance from several of the portfolio's holdings, particularly Amazon, Google and Apple. Apple, one of the portfolio's largest holdings, had a negative return of -7.5% over the last 60 days which has a significant impact on the overall performance of the portfolio. This decline, along with poor performance of other large holdings such as Amazon and Google, had a significant impact on the portfolio's overall performance. It is also worth noting that the portfolio is heavily invested in the Information Technology sector, with Apple, Microsoft, Google and Amazon representing 80% of the portfolio. This high concentration in a single sector increases the portfolio's risk. Additionally, the portfolio's beta is relatively high, with an average of 1.1 over the last 5 years, indicating that it has higher volatility than the overall market. Furthermore, the forward P/E ratio of the portfolio is relatively high, with an average of 22.36, suggesting that the portfolio may be overvalued.")
-   st.markdown('Sentiment analysis: {}'.format(sentiment[0]['label']))
+   st.markdown('The performance seems: {}'.format(sentiment[0]['label']))
 
    with st.expander("Full report"):
       st.markdown("First, it is important to note that the portfolio experienced a negative return of -3.62% over the last 60 days. This underperformance can primarily be attributed to poor performance from several of the portfolio's largest holdings, specifically Amazon, Google and Apple.")
